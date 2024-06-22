@@ -105,7 +105,7 @@ void limpa(){
 //Fase II
 
 void exibirMenuDietas(){
-    printf("\nEscolha o tipo de dieta:\n");
+    printf("\nEscolha o tipo de dieta digitando o seu nome:\n");
     printf("1 - Vegetariana\n");
     printf("2 - Vegana\n");
     printf("3 - Pescetariana\n");
@@ -116,8 +116,8 @@ void exibirMenuDietas(){
 
 void exibirMenuPerfil(){
     printf("Escolha o perfil:\n");
-    printf("1 - Perfil 1 Masculino\n");
-    printf("2 - Perfil 2 Feminino\n");
+    printf("1 - Perfil 1 Masculino medio\n");
+    printf("2 - Perfil 2 Feminino medio\n");
     printf("0 - Sair\n");
 }
 
