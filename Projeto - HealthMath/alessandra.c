@@ -63,7 +63,7 @@ void calcularIngestaoSemanal(float *ingestaoSemanal, float caloriasDiarias, int 
     }
 
     *(ingestaoSemanal + diaAtual) = caloriasDiarias * 7;
-    calcularIngestaoSemanal(ingestaoSemanal, caloriasDiarias, diaAtual + 1, numSemanas); // Chamada recursiva para o prÛximo dia
+    calcularIngestaoSemanal(ingestaoSemanal, caloriasDiarias, diaAtual + 1, numSemanas); // Chamada recursiva para o pr√≥ximo dia
 }
 
 void imprimirIngestaoSemanal(float *ingestaoSemanal, int numSemanas, int index){
@@ -72,7 +72,7 @@ void imprimirIngestaoSemanal(float *ingestaoSemanal, int numSemanas, int index){
     }
 
     printf("Semana %d: %.2f calorias\n\n", index + 1, *(ingestaoSemanal + index));
-    imprimirIngestaoSemanal(ingestaoSemanal, numSemanas, index + 1); // Chamada recursiva para a prÛxima posiÁ„o(dia)
+    imprimirIngestaoSemanal(ingestaoSemanal, numSemanas, index + 1); // Chamada recursiva para a pr√≥xima posi√ß√£o(dia)
 }
 
 void imprimirResumoResultados(float imc, float tmb, float necessidadeCalorica, float consumoAgua){
@@ -82,7 +82,7 @@ void imprimirResumoResultados(float imc, float tmb, float necessidadeCalorica, f
 	printf("Consumo de agua recomendado: %.2f L\n\n", consumoAgua);
 }
 
-// FunÁ„o recursiva toda vida agora
+// Fun√ß√£o recursiva toda vida agora
 float calcularValorCalorico(float *carboidratos, float *proteinas, float *gorduras, int numAlimentos, int index){
     if (index == numAlimentos){
         return 0;
@@ -138,7 +138,7 @@ void montarDietaVegetariana(float tmb, float *resultado){
     printf("Dieta Vegetariana:\n");
     printf("Todos os valores sao uma simulacao da realidade!\n\n");
 
-    //CafÈ da manh„
+    //Caf√© da manh√£
     printf("Cafe da manha:\n");
     printf("Aveia com frutas e sementes de chia\n");
     printf("Total de calorias: 425 calorias\n");
@@ -146,7 +146,7 @@ void montarDietaVegetariana(float tmb, float *resultado){
     float percentCafeDaManha = (caloriasCafeDaManha * 100.0) / tmb;
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentCafeDaManha);
 
-    //AlmoÁo
+    //Almo√ßo
     printf("Almoco:\n");
     printf("Salada de quinoa, abacate, grao-de-bico, espinafre,\n tomate, pepino e molho de tahine(semente de gergelim)\n");
     printf("Total de calorias: 432 calorias\n");
@@ -184,7 +184,7 @@ void montarDietaVegana(float tmb, float *resultado){
     printf("Dieta Vegana:\n");
     printf("Todos os valores sao uma simulacao da realidade!\n\n");
 
-    //CafÈ da Manh„
+    //Caf√© da Manh√£
     printf("Cafe da Manha:\n");
     printf("Aveia cozida com leite de amendoa \n");
     float caloriasCafeDaManha = 342.0;
@@ -192,7 +192,7 @@ void montarDietaVegana(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasCafeDaManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentCafeDaManha);
 
-    //Fome da Manh„
+    //Fome da Manh√£
     printf("Lanche da Manha:\n");
     printf("Iogurte de soja com framboesas\n");
     float caloriasLancheManha = 150.0;
@@ -200,7 +200,7 @@ void montarDietaVegana(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasLancheManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentLancheManha);
 
-    //AlmoÁo
+    //Almo√ßo
     printf("Almoco:\n");
     printf("Quinua cozida com feijao-preto, brocolis cozido e \nsalada com folhas verdes, tomate, pepino e azeite de oliva\n");
     float caloriasAlmoco = 330.0;
@@ -210,7 +210,7 @@ void montarDietaVegana(float tmb, float *resultado){
 
     //Fome da Tarde
     printf("Lanche da Tarde:\n");
-    printf("Mix de oleaginosas (amÍndoas, nozes, castanhas)\n");
+    printf("Mix de oleaginosas (am√™ndoas, nozes, castanhas)\n");
     float caloriasLancheTarde = 180.0;
     float percentLancheTarde = (caloriasLancheTarde * 100.0) / tmb;
     printf("Total de calorias: %.2f calorias\n", caloriasLancheTarde);
@@ -239,7 +239,7 @@ void montarDietaPescetariana(float tmb, float *resultado){
 	printf("Dieta Pescetariana:\n");
     printf("Todos os valores sao uma simulacao da realidade!\n\n");
 
-    //CafÈ da Manh„
+    //Caf√© da Manh√£
     printf("Cafe da Manha:\n");
     printf("Omelete de ovos (2 ovos) com espinafre e tomate\n");
     float caloriasCafeDaManha = 330.0;
@@ -247,7 +247,7 @@ void montarDietaPescetariana(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasCafeDaManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentCafeDaManha);
 
-    //Fome da Manh„
+    //Fome da Manh√£
     printf("Lanche da Manha:\n");
     printf("Uma banana e meia \n");
     float caloriasLancheManha = 133.5;
@@ -255,7 +255,7 @@ void montarDietaPescetariana(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasLancheManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentLancheManha);
 
-    //AlmoÁo
+    //Almo√ßo
     printf("Almoco:\n");
     printf("File de salmao grelhado com quinoa cozida e broccolis cozidos \n");
     float caloriasAlmoco = 420.0;
@@ -293,7 +293,7 @@ void montarDietaNormal(float tmb, float *resultado){
 	printf("Dieta 'Normal':\n");
      printf("Todos os valores sao uma simulacao da realidade!\n\n");
 
-    // CafÈ da Manh„
+    // Caf√© da Manh√£
    	printf("Cafe da Manha:\n");
     printf("Omelete de ovos (2 ovos) com espinafre e tomate\n");
     float caloriasCafeDaManha = 330.0;
@@ -301,7 +301,7 @@ void montarDietaNormal(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasCafeDaManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentCafeDaManha);
 
-    // Lanche da Manh„
+    // Lanche da Manh√£
     printf("Lanche da Manha:\n");
     printf("3 peras\n");
     float caloriasLancheManha = 151.0;
@@ -309,7 +309,7 @@ void montarDietaNormal(float tmb, float *resultado){
     printf("Total de calorias: %.2f calorias\n", caloriasLancheManha);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentLancheManha);
 
-    // AlmoÁo
+    // Almo√ßo
     printf("Almoco:\n");
     printf("Peito de frango grelhado com quinua cozida, brocolis cozidos \ne salada com folhas verdes, tomate, pepino e azeite de oliva\n");
     float caloriasAlmoco = 510.0;
@@ -333,7 +333,7 @@ void montarDietaNormal(float tmb, float *resultado){
     printf("Total de calorias do jantar: %.2f calorias\n", caloriasJantar);
     printf("Percentagem das calorias da TMB: %.2f%%\n\n", percentJantar);
 
-    // Total di·rio
+    // Total di√°rio
     float caloriasTotais = caloriasCafeDaManha + caloriasLancheManha + caloriasAlmoco + caloriasLancheTarde + caloriasJantar;
     float percentTotal = (caloriasTotais * 100.0) / tmb;
     printf("Resumo Geral:\n");
@@ -361,7 +361,7 @@ int lerArquivoAlimentos(Alimento **alimentos, const char *nomeArquivo){
 
     *alimentos = malloc(sizeof(Alimento) * numTotalAlimentos);
     if (!*alimentos) {
-        printf("Erro ao alocar memÛria para os alimentos");
+        printf("Erro ao alocar memoria para os alimentos");
         fclose(arquivo);
         return 0;
     }
@@ -415,7 +415,7 @@ void montarDieta(Alimento *alimentos, int numAlimentos){
         }
 
         if (!encontrado) {
-            printf("Alimento n„o encontrado. Tente novamente.\n");
+            printf("Alimento nao encontrado. Tente novamente.\n");
         }
     }
 	
