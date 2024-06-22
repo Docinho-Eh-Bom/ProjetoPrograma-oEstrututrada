@@ -98,7 +98,7 @@ int main(){
 	        }else if(stricmp(dieta, "montar") == 0){
 	            limpa();
 	            imprimirListaAlimentos(alimentos, numAlimentos);
-	            printf("Digite os alimentos desejados (digite 'fim' para encerrar):\n");
+	            printf("Digite o nome dos alimentos desejados como estao escritos para escolher (digite 'fim' para encerrar):\n");
 	
 	            if(numAlimentos > 0){
 	                montarDieta(alimentos, numAlimentos);
